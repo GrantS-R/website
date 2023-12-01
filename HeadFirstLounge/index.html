@@ -18,5 +18,16 @@
         <p>
             You'll find us right in the center of downtown Webville. If you need help finding us, check out our <a href="About/HeadFirstLoungeDirections.html">detailed direction.</a> Come join us!
         </p>
+        <script>
+            let alertLog = 0;
+            if(alertLog == 0) {
+                alert("You have to cklick OK to access this page.");
+                alertLog += 1;
+            }
+            else if(alertLog <= 2){
+                alert("You have to press OK again, sorry :(");
+                alertLog += 1;
+            }
+        </script>
     </body>
 </html>
