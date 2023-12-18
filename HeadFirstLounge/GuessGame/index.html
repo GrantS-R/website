@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <title>
+            Guessing game
+        </title>
+        <script src="Javascript.js">
+            function init() {
+                let HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+                let CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' + loc + '?profile=css3';
+                document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+                document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+            }
+        </script>
+        <link rel="stylesheet" href="Stylesheet.css">
+    </head>
+    <body>
+        <h1>
+            Guessing Game
+        </h1>
+        <footer>
+            <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+            <a id="vLink2"><strong> CSS </strong> Valid! </a>
+        </footer>
+    </body>
+</html>
