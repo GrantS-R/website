@@ -1,0 +1,128 @@
+body{
+    font-size: 85%;
+    font-family: oregonfont;
+    background-color: #078cad;
+}
+h1{
+    text-shadow: 3px 3px 3px #888888;
+    font-size: 140%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    transition-duration: 3s;
+}
+
+p{
+    font-size: 110%;
+    width: 600px;
+}
+@font-face{
+    font-family: oregonfont;
+    src: url(./Media/Oregon_LDO/Oregon_LDO_Book.ttf);
+}
+article {
+    padding: 10px;
+}
+
+footer {
+    font-size: 80%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    clear: both;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: #d8d8d8;
+    margin-top: 0;
+    padding: 0;
+}
+.floatright {
+    float: right;
+    clear: right;
+    margin: 10px;
+}
+nav {
+    background: #d8d8d8;
+    font-weight: bold;
+    float: left;
+    height: 610px;
+    padding-right: 24px;
+    margin-right: 10px;
+}
+.navlinks{
+    display: block;
+    border: 2px solid #a1a1a1;
+    padding: 2px 5px;
+    background: #add8e6;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+section{
+    color: #000000;
+    text-shadow: 1px 1px 5px white;
+    font-weight: 9000;
+    background: url(./images/circuitbg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#drop-menu{
+    width: 150px;
+    cursor: pointer;
+    display: block;
+    border: 2px solid #a1a1a1;
+    padding: 5px;
+    height: 20px;
+    max-height: 20px;
+    background: #add5e6;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    font-family: oregonfont;
+    font-weight: bold;
+    font-size: 85%;
+    color: #0000a0;
+}
+.sub-menu li{
+    list-style-type: none;
+    display: block;
+    border: 2px solid #add5e6;
+    padding: 2px 5px;
+    background: #d8d8d8;
+    border-radius: 5px;
+}
+.sub-menu li:hover{
+    border: 2px solid #bababa;
+}
+#rightbox{
+    float:right;
+    width:25%;
+    height:280px;
+}
+h2~p{
+    font-style: italic;
+    font-size: 20px;
+}
+
+#img-tilt {
+    -ms-transform: rotate(315deg); 
+    -webkit-transform: rotate(345deg); 
+    transform: rotate(345deg);
+
+
+}
+
+#div-box{
+    margin: auto;
+}
+
+#sound-rotate {
+    z-index: -1;
+    position: relative;
+    -webkit-transform: rotateY(180deg); 
+    transform: rotateY(180deg);
+}
+
+h1:hover {
+    width: 250px;
+    height: 150%;
+    transform: rotate(360deg);
+}

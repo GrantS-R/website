@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>
+        Computer parts
+    </title>
+
+
+    <meta charset="utf-8">
+    <meta name="Description" content="Sample Website for learning HTML5 and CSS3">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+    <br>
+    <br>
+    
+    <h1 id="p:hover">how does a computer work?</h1>
+
+    <header>
+        <div class="floatright" id="drop-menue">
+            More on computer parts
+            <ul class="sub-menu">
+                <li><a href="https://en.wikipedia.org/wiki/Computer_hardware">Wiki page on computer parts</a></li>
+                <li><a href="https://www.microcenter.com/">Computer parts store</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div id ="div-box">
+            <img id="img-tilt"src="images/open_computer.jpeg" alt="open_computer" width="240">
+        </div>
+        <br>
+        <br>
+            <p> to the left you can see a open computer it might look very complicated now with wires everywhere and
+                competes just lying about but hopefully we can give you information about each component so you know
+                how a computer works</p>
+  
+        
+    </header>
+    <nav>
+        <ul>
+            <li>Computer Parts
+            <ul>
+                <li><a class=navlinks href="Computer_Parts/motherboard.html">motherboards</a></li>
+                <li><a class=navlinks href="Computer_Parts/chips.html">Computer chips</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>What is a computer?</h1>
+            <p>Computers might seem complicated, but really they are quite simple. a computer is just machine that can store
+                and process information.</p>
+        </article>
+        <article>
+            <h2>Why is it important to know about computers and their parts?</h1>
+            <p>To know how the parts of a computer make it work.</p>
+        </article>
+    </section>
+    <video width="360" height="270" controls="controls">
+        <source src="Media/bootupvid.mp4">
+    </video>
+
+    <br>
+
+    <audio id="sound-rotate" controls="controls">
+        <source src="Media/bootup.mp3">
+    </audio>
+
+    <br>
+
+    <script>
+        function init() {
+            var loc = window.location.href;
+            var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+            var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' + loc + '?profile=css3';
+            document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+            document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+        }
+        window.onload = init;
+    </script>
+    <div style="text-align: center;">
+    <hr>
+    <a id="vLink1" href="http://validator.w3.org/check?uri=https://conradskelly.github.io/Computer_Parts/index.html">
+        <strong> HTML </strong>
+        Valid!
+    </a>
+    |
+    <a id="vLink2"
+        href="http://jigsaw.w3.org/css-validator/validator?uri=https://conradskelly.github.io/Computer_Parts/index.html?profile=css3">
+        <strong> CSS </strong>
+        Valid!
+    </a>
+    </div>
+</body>
+
+</html>
