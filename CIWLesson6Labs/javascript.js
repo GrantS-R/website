@@ -41,3 +41,66 @@ function runningTotal(i) {
     correctA += i;
     return correctA;
 }
+function vote() {
+    let t = "Your favorite sport is: ";
+    for (i = 0; i < document.myform.sports.length; i++) {
+        if (document.myform.sports[i].checked == true) {
+            t = t + document.myform.sports[i].value;
+        }
+    }
+    if (t == "Your favorite sport is: ") {
+        document.getElementById("txt").value = "Choose a sport";
+    } else {
+        document.getElementById("txt").value = t;
+        document.getElementById("txt1").value = t;
+        document.getElementById("txt2").value = t;
+    }
+}
+function upperCase() {
+    let x = document.getElementById("txt").value;
+    document.getElementById("txt").value = x.toUpperCase();
+}
+function SayHello() {
+    alert("Your mouse is over the text!");
+}
+function SayGoodbye() {
+    alert("Your mouse has left the text!");
+}
+function getCheckedValue(radioObj) {
+    if (!radioObj) 
+        return "";
+    let radioLength = radioObj.length;
+    if (radioLength == undefined)
+        if (radioObj.checked) 
+            return radioObj.value;
+        else return "";
+    for (let i = 0; i < radioLength; i++) {
+        if (radioObj[i].checked) {
+            return radioObj[i].value;
+        }
+    }
+    return "";
+}
+function setCheckedValue(radioObj, newValue) {
+    if (!radioObj) 
+        return;
+    let radioLength = radioObj.length;
+    if (radioLength == undefined) {
+        radioObj.checked = radioObj.value == newValue.toString();
+        return;
+    }
+    for (let i = 0; i < radioLength; i++) {
+        radioObj[i].checked = false;
+        if (radioObj[i].value == newValue.toString()) {
+            radioObj[i].checked = true;
+        }
+    }
+}
+function addNumbers(arg1, arg2) {
+    let result = arg1 + arg2;
+    return result;
+}
+alert("Please enter a numerical value in each of the following prompt dialog boxes. \nThe two numbers will be added together.");
+let num1 = prompt("Please enter a numerical value.","");
+let num2 = prompt("Please enter a numerical value.","");
+document.write("<p>The result of the addNumbers() function is: <strong>" + addNumbers( parseFloat(num1), parseFloat(num2)) + "</strong></p>");
