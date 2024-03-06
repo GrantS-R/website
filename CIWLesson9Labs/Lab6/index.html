@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <title>
+            Lab 6
+        </title>
+    </head>
+    <body>
+        <h1>
+            Lab 6
+        </h1>
+        <form>
+            <fieldset name="pattern_attribute">
+                <legend>The Pattern Attribute</legend>
+                <p>
+                    <label for="date">Date: </label>
+                    <input type="text" name="date" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" id="date" />
+                </p>
+                <p>
+                    <label for="mail">E-mail: </label>
+                    <input type="email" placeholder="firstllastname@website.type" name="email" pattern="^.+@.+$" id="mail" />
+                </p>
+                <p>
+                    <label for="url">URL: </label>
+                    <input type="url" placeholder="http://itc.gctaa.net" name="URL" pattern="https?://.+" id="url" />
+                </p>
+                <p>
+                    <label for="rate">Price: </label>
+                    &#36;<input type="text" placeholder="0.00" name="price" pattern="\d+(\.\d{2})?" id="rate" />
+                </p>
+                <button type="submit" formaction="">Submit Form</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

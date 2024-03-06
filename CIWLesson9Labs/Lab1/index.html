@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <title>
+            Lab 1
+        </title>
+    </head>
+    <body>
+        <h1>
+            Lab 1
+        </h1>
+        <form autocomplete="on">
+            <fieldset name="personal_info">
+                <legend>Personal Information:</legend>
+                <p>
+                    <label for="tit">Title: </label>
+                    <input list="titles" name="title" id="tit" />
+                    <datalist id="titles" >
+                        <option value="Sir"> </option>
+                        <option value="Mam"> </option>
+                        <option value="Missus"> </option>
+                        <option value="Miss"> </option>
+                        <option value="N. A. "> </option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="first">First name: </label>
+                    <input type="text" name="firstname" id="first" />
+                </p>
+                <p>
+                    <label for="last">Last name: </label>
+                    <input type="text" name="lastname" id="last" />
+                </p>
+                <p>
+                    <label for="db">Date of Birth: </label>
+                    <input type="date" name="dob" id="db" />
+                </p>
+                <input type="submit" formaction="">
+            </fieldset>
+        </form>
+    </body>
+</html>
