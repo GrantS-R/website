@@ -1,0 +1,17 @@
+body{
+    font-family: 'Times New Roman', serif;
+    background-image: url("../Photos/background.jpeg");
+    color: #dfbc00;
+    h1{
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+    }
+    a:link{
+        color: #61df74;
+    }
+    a:visited{
+        color: #ff536e;
+    }
+}
