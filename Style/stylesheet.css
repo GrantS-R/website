@@ -14,4 +14,12 @@ body{
     a:visited{
         color: #ff536e;
     }
+    #Awards{
+        text-align: center;
+        font-size: 50px;
+        margin-left: 22%;
+    }
+    #Heading{
+        text-decoration: underline;
+    }
 }
