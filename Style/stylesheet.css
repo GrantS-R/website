@@ -22,4 +22,8 @@ body{
     #Heading{
         text-decoration: underline;
     }
+    ol{
+        margin-left: 15%;
+        font-size: 35px;
+    }
 }
